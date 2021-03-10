@@ -10,24 +10,6 @@ export class Form extends Component {
       topic: "",
     };
   }
-  // handleUsernameChange = (event) => {
-  //   this.setState({
-  //     username: event.target.value,
-  //   });
-  // };
-
-  // handleCommentsChange = (event) => {
-  //   this.setState({
-  //     comments: event.target.value,
-  //   });
-  // };
-
-  // handleTopicChange = (event) => {
-  //   this.setState({
-  //     topic: event.target.value,
-  //   });
-  // };
-
   handleFormFieldsChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
