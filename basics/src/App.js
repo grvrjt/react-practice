@@ -10,21 +10,23 @@ import Inline from "./components/Inline";
 import "./components/appStyles.css";
 import style from "./components/appStyles.module.css";
 import Form from "./components/Form";
+import ParentComp from "./components/ParentComp";
 function App() {
   return (
     <div className="App">
-        {/* <h1 className={style.success}>Success</h1> */}
-        {/* <h1 className="error">Error</h1> */}
-        {/* <Inline /> */}
-        {/* <Stylesheet primary={true} /> */}
-        {/* <NameList/> */}
-        {/* <UserGreeting /> */}
-        {/* <ParentComponent />
+      {/* <h1 className={style.success}>Success</h1> */}
+      {/* <h1 className="error">Error</h1> */}
+      {/* <Inline /> */}
+      {/* <Stylesheet primary={true} /> */}
+      {/* <NameList/> */}
+      {/* <UserGreeting /> */}
+      {/* <ParentComponent />
         <EventBind />
        <FunctionClick />
        <ClassClick /> */}
-        {/* <Stylesheet /> */}
-        <Form />
+      {/* <Stylesheet /> */}
+      {/* <Form /> */}
+      <ParentComp></ParentComp>
     </div>
   );
 }
