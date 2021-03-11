@@ -11,6 +11,7 @@ import "./components/appStyles.css";
 import style from "./components/appStyles.module.css";
 import Form from "./components/Form";
 import ParentComp from "./components/ParentComp";
+import RefDemo from "./components/RefDemo";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
       {/* <Stylesheet /> */}
       {/* <Form /> */}
       <ParentComp></ParentComp>
+      <RefDemo />
     </div>
   );
 }
