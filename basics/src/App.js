@@ -12,6 +12,19 @@ import style from "./components/appStyles.module.css";
 import Form from "./components/Form";
 import ParentComp from "./components/ParentComp";
 import RefDemo from "./components/RefDemo";
+import AutoFocusTextInput from "./components/AutoFocusTextInput";
+import Input from "./components/Input";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
+import FRParentInput from "./components/FRParentInput";
+import Hero from "./Hero";
+import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HowerCounterTwo from "./components/HowerCounterTwo";
+import User from "./components/User";
+import Counter from "./components/Counter";
 function App() {
   return (
     <div className="App">
@@ -27,8 +40,41 @@ function App() {
        <ClassClick /> */}
       {/* <Stylesheet /> */}
       {/* <Form /> */}
-      <ParentComp></ParentComp>
-      <RefDemo />
+      {/* <ParentComp></ParentComp>
+      <RefDemo /> */}
+      {/* <Input /> */}
+      {/* <AutoFocusTextInput/> */}
+      {/* <FragmentDemo />
+      <Table /> */}
+      {/* <FRParentInput/> */}
+      {/* <ErrorBoundary>
+        <Hero heroName="joker" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Gaurav" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Manoj" />
+      </ErrorBoundary> */}
+      {/* <ClickCounter name="click" />
+      <HoverCounter name="hover" /> */}
+
+      <Counter>
+        {(count, increamentCount) => (
+          <ClickCounterTwo count={count} increamentCount={increamentCount} />
+        )}
+      </Counter>
+      <Counter>
+        {(count, increamentCount) => (
+          <HowerCounterTwo count={count} increamentCount={increamentCount} />
+        )}
+      </Counter>
+
+      {/* <ClickCounterTwo></ClickCounterTwo>
+      <HowerCounterTwo />
+      <User
+        name={(isLoggedIn) => (isLoggedIn ? "MANOJ KUMAR" : "Guest")}
+      ></User> */}
     </div>
   );
 }
